@@ -1,0 +1,184 @@
+body {
+    background-color:rgb(249, 222, 189);
+    color:rgb(56, 68, 116);
+    font-weight: bold;
+}
+
+a {
+    padding: 2%;
+    background-color: white;
+    position:relative;
+    width: 100px;
+    text-align:center;
+    font-family:'Courier New', Courier, monospace;
+    color:rgb(56, 68, 116);
+    border-radius: 25px;
+}
+
+button {
+    border:0px;
+    background-color: white;
+    border-radius: 25px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+
+input {
+    border: 0;
+    height: 30px;
+    border-radius: 25px;
+
+}
+
+#title {
+    height: 20px;
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    text-align: center;
+    position: relative;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#prompt {
+    height: 20px;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    position: relative;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.question {
+    width: 200px;
+    left:50%;
+    margin-left: -100px;
+    text-align:center;
+    position:relative;
+}
+
+#result {
+    padding: 20px;
+    top:10px;
+    width:100px;
+    left:50%;
+    margin-left: -70px;
+    text-align:center;
+    position: relative;
+    font-family:'Courier New', Courier, monospace;
+    background-color:rgb(56, 68, 116);
+    color: white;
+    border-radius:25px;
+}
+
+#optionOne {
+    top:10px;
+    width:100px;
+    left:50%;
+    margin-left: -50px;
+    text-align:center;
+    position: relative;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#optionTwo {
+    top:10px;
+    width:100px;
+    left:50%;
+    margin-left: -50px;
+    text-align:center;
+    position: relative;
+    font-family:'Courier New', Courier, monospace;
+}
+
+:invalid + [for="txtName"] {
+    opacity: 0;
+    top:-1000px;
+    position:relative;
+}
+
+:valid + [for="txtName"] {
+    opacity: 1;
+    width:80px;
+    position:relative;
+    left: 60%;
+    margin-left:-40px;
+}
+
+:invalid + [for="optOne"] {
+    opacity: 0;
+    top:-1000px;
+    position:relative;
+}
+
+:valid + [for="optOne"] {
+    opacity: 1;
+    width:80px;
+    position:relative;
+    left: 60%;
+    margin-left:-40px;
+}
+
+:invalid + [for="optTwo"] {
+    opacity: 0;
+    top:-1000px;
+    position:relative;
+}
+
+:valid + [for="optTwo"] {
+    opacity: 1;
+    width:80px;
+    position:relative;
+    left: 60%;
+    margin-left:-40px;
+}
+
+.lightBlue {
+    background-color: aliceblue;
+    color:rgb(56, 68, 116);
+}
+
+.blue {
+    background-color: rgb(137, 160, 202);
+    color:white;
+}
+
+.left {
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+#decisionButton {
+    width:80px;
+    position:relative;
+    left: 50%;
+    margin-left:-40px;
+}
+
+#table {
+    width: 400px;
+    font-size: 100px;
+    color: white;font-family:'Courier New', Courier, monospace;
+    left:50%;
+    position: relative;
+    margin-left: -200px;
+    border-spacing: 10px;
+}
+
+#table td {
+    background-color:rgb(137, 160, 202);
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    text-align: center;
+}
+
+#table td:hover {
+    background-color:white;
+    color:rgb(56, 68, 116);
+}

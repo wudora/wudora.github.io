@@ -1,0 +1,38 @@
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div id="title">Yes/No Decision Maker</div>
+    <br>
+    <br>
+    <div id="prompt">Enter a question:</div>
+    <input type="text" id="txtName" class="question" name="txtName" value="" pattern="[A-z\s]*\?" required />
+    <button class="blue" for="txtName" onclick="random()">enter</button>
+    <script>
+        function random(){
+            var number = Math.floor(Math.random() * 2);
+            if (number == 0){
+                document.getElementById("result").innerHTML = "yes";
+                document.getElementByClassName("white").innerHTML = "green";
+            }
+            else {
+                document.getElementById("result").innerHTML = "no";
+                document.getElementsByClassName("white").innerHTML = "red";
+            }
+        }
+    </script>
+    <br>
+    <br>
+    <div id="result" class="white"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a class="right" href="../index.html">Main Page</a>
+    
+</body>
+
+
+

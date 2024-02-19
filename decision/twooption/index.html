@@ -1,0 +1,50 @@
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div id="title">Two Option Decision Maker</div>
+    <br>
+    <br>
+    <div id="prompt">Enter two options</div>
+    <br><input type="text" id="optOne" class="question" name="optOne" value="" pattern="[A-z]*" required />
+    <button class="lightBlue" for="optOne" onclick="addOptionOne()">add</button>
+    <br>
+    <br>
+    <input type="text" id="optTwo" class="question" name="txtName" value="" pattern="[A-z]*" required />
+    <button class="lightBlue" for="optTwo" onclick="addOptionTwo()">add</button>
+    <br>
+    <div id="optionOne"></div>
+    <div id="optionTwo"></div>
+    <br>
+    <br>
+    <button class="blue" id="decisionButton" onclick="random()">get decision</button>
+    <br><div id="result"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a class="left" href="../index.html">Main Page</a>
+    
+</body>
+
+<script>
+    function addOptionOne(){
+        document.getElementById("optionOne").innerHTML = document.getElementById("optOne").value;
+    }
+
+    function addOptionTwo(){
+        document.getElementById("optionTwo").innerHTML = document.getElementById("optTwo").value;
+    }
+
+    function random(){
+            var number = Math.floor(Math.random() * 2);
+            if (number == 0){
+                document.getElementById("result").innerHTML = document.getElementById("optionOne").innerHTML;
+            }
+            else {
+                document.getElementById("result").innerHTML = document.getElementById("optionTwo").innerHTML;
+            }
+        }
+</script>
