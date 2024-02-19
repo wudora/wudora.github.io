@@ -103,8 +103,8 @@ input {
     opacity: 1;
     width:80px;
     position:relative;
-    left: 60%;
-    margin-left:-40px;
+    left: 50%;
+    margin-left:0px;
 }
 
 :invalid + [for="optOne"] {
@@ -117,8 +117,8 @@ input {
     opacity: 1;
     width:80px;
     position:relative;
-    left: 60%;
-    margin-left:-40px;
+    left: 50%;
+    margin-left:0px;
 }
 
 :invalid + [for="optTwo"] {
@@ -131,8 +131,8 @@ input {
     opacity: 1;
     width:80px;
     position:relative;
-    left: 60%;
-    margin-left:-40px;
+    left: 50%;
+    margin-left:0px;
 }
 
 .lightBlue {
