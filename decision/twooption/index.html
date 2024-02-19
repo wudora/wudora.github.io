@@ -8,11 +8,11 @@
     <br>
     <br>
     <div id="prompt">Enter two options</div>
-    <br><input type="text" id="optOne" class="question" name="optOne" value="" pattern="[A-z]*" required />
+    <br><input type="text" id="optOne" class="question" name="optOne" value="" pattern="[A-z\s]*" required />
     <button class="lightBlue" for="optOne" onclick="addOptionOne()">add</button>
     <br>
     <br>
-    <input type="text" id="optTwo" class="question" name="txtName" value="" pattern="[A-z]*" required />
+    <input type="text" id="optTwo" class="question" name="txtName" value="" pattern="[A-z\s]*" required />
     <button class="lightBlue" for="optTwo" onclick="addOptionTwo()">add</button>
     <br>
     <div id="optionOne"></div>
@@ -26,7 +26,6 @@
     <br>
     <br>
     <a class="left" href="../index.html">Main Page</a>
-    
 </body>
 
 <script>
