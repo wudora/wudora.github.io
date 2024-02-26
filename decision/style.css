@@ -149,11 +149,15 @@ input {
     color:white;
 }
 
-.left {
+#rightlink {
+    position: relative;
+    left: 55%;
     float:left;
 }
 
-.right{
+#leftlink{
+    position: relative;
+    right: 55%;
     float:right;
 }
 
@@ -167,7 +171,8 @@ input {
 #table {
     width: 400px;
     font-size: 100px;
-    color: white;font-family:'Courier New', Courier, monospace;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
     left:50%;
     position: relative;
     margin-left: -200px;
@@ -185,4 +190,19 @@ input {
 #table td:hover {
     background-color:white;
     color:rgb(56, 68, 116);
+}
+
+#icon{
+    width:20px;
+    height:20px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+
+    background-color:rgb(137, 160, 202);
+    border-radius:50%;
+    text-align: center;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
 }
