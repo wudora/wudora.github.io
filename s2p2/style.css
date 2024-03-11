@@ -1,5 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Madimi+One&display=swap');
+
 body {
-    background-color:rgb(249, 222, 189);
-    color:rgb(56, 68, 116);
+    background-color: #829445;
     font-family:'Courier New', Courier, monospace;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+#title {
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    font-size: 10vh;
+    color:white;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#text {
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.circleimage {
+    width: min(80vw, 60vh);
+    height: min(80vw, 60vh);
+    border-radius: 50%;
+    position: fixed;
+    color: white;
+    z-index: 2;
+    float: left;
+}
+
+.bannerimage {
+    width: 21vw;
+    border-radius: 3vw;
+    position: relative;
+    text-align: center;
+    float: left;
+    color: white;
+    z-index: 0;
+}
+
+.bannerimage:hover {
+    opacity: 50%;
+}
+
+.card:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 25vh;
+    left: 10vw;
+    right: 10vw;
+    bottom: 10vh;
+    font-size: 30px;
+}
+
+#table {
+    width: 100vw;
+    position: relative;
+}
+
+.green {
+    color:#829445;
+    font-size: 4vw;
+
+}
+
+.white {
+    color: white;
+    font-size: 5vh;
+}
+
+#name {
+    position:fixed;
+    bottom: 0vh;
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
