@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Madimi+One&display=swap');
+
+body {
+    background-color: #af9a72;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+#title {
+    height: 8vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    font-size: 8vh;
+    color:white;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#text {
+    height: 4vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    font-size: 3vh;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#article {
+    height: 4vh;
+    border-radius: 2vh;
+    width: 26vw;
+    background-color: rgb(255, 255, 255);
+    color: rgb(74, 56, 34);
+    text-align: center;
+    left: 2vw;
+    margin-top: 2vh;
+    font-size: 3vh;
+    position: relative;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.circleimage {
+    width: min(80vw, 60vh);
+    height: min(80vw, 60vh);
+    border-radius: 50%;
+    position: fixed;
+    color: white;
+    z-index: 2;
+    float: left;
+}
+
+.card:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: none;
+    background: white;
+    position: fixed;
+    border-radius: 2vh;
+    top: 15vh;
+    left: 35vw;
+    right: 5vw;
+    bottom: 5vh;
+    font-size: 30px;
+}
+
+#picture {
+    display: flex;
+    background: white;
+    position: fixed;
+    border-radius: 2vh;
+    top: 15vh;
+    left: 35vw;
+    right: 5vw;
+    bottom: 5vh;
+    font-size: 30px;
+}
+
+#outfit {
+    display: flex;
+    background: white;
+    position: fixed;
+    border-radius: 2vh;
+    width: 26vw;
+    top: 40vh;
+    left: 3vw;
+    bottom: 5vh;
+    font-size: 30px;
+}
+
+#name {
+    position:fixed;
+    bottom: 0vh;
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carousel-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-slide img {
+    width: 100%; /* Make each image fill the container width */
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color:rgb(74, 56, 34);
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+
+.small {
+    width: 20vw;
+}
+
+#c1 {
+    width: 40vh;
+    height: auto;
+    position: absolute;
+
+}
+#c2 {
+    width: 40vh;
+    height: auto;
+    position: absolute;
+}
+
+#c3 {
+    width: 40vh;
+    height: auto;
+    position: absolute;
+}
+#c4 {
+    width: 40vh;
+    height: auto;
+    position: absolute;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10;
+    font-family: "Madimi One", sans-serif;
+    color:rgb(74, 56, 34);
+}
+
+.display1 {
+    width: 15vw;
+    position: absolute;
+    left: 10;
+    top:40vh;
+}
+.display2 {
+    width: 15vw;
+    position: absolute;
+    left: 10;
+    top: 55vh;
+}
+.display3 {
+    width: 15vw;
+    position: absolute;
+    left: 10;
+    top: 70vh;
+}
+.display4 {
+    width: 15vw;
+    position: absolute;
+    left: 10;
+    top: 90vh;
+}

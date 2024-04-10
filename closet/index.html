@@ -1,0 +1,189 @@
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="title">closet</div>
+    <div id="text">pick my outfit</div>
+    <div id="picture">
+        <div id="text">
+            <br>
+            <br>1. check the weather for <br>
+            Monday April 15th
+            <br>
+            <br>
+            2. go to each clothing category and
+            <br>
+            select an article from each group
+            <br>
+            using the arrows
+            <br>
+            <br>
+            3. close each category with the 'x'
+            <br>
+            at the top right to save your selection
+        </div>
+    </div>
+    <a href="#jackets">
+        <div id="article">jackets</div>
+    </a>
+    <a href="#tops">
+        <div id="article">tops</div>
+    </a>
+    <a href="#bottoms">
+        <div id="article">bottoms</div>
+    </a>
+    <a href="#shoes">
+        <div id="article">shoes</div>
+    </a>
+
+    <img id="displayjacket" class="display1" src="images/empty.png">
+    <img id="displaytop" class="display2" src="images/empty.png">
+    <img id="displaybottom" class="display3" src="images/empty.png">
+    <img id="displayshoes" class="display4" src="images/empty.png">
+        
+    <script>
+        function showSlide(carouselId, index) {
+        const slideWidth = document.getElementById(carouselId).offsetWidth;
+        const slides = document.getElementById(carouselId).querySelector('.carousel-slide');
+        const offset = -index * slideWidth;
+        slides.style.transform = `translateX(${offset}px)`;
+    }
+
+    function nextSlide(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        let currentIndex = parseInt(carousel.dataset.currentIndex) || 0;
+        const totalSlides = carousel.querySelectorAll('.carousel-slide img').length;
+        currentIndex = (currentIndex + 1) % totalSlides;
+        carousel.dataset.currentIndex = currentIndex;
+        showSlide(carouselId, currentIndex);
+    }
+
+    function prevSlide(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        let currentIndex = parseInt(carousel.dataset.currentIndex) || 0;
+        const totalSlides = carousel.querySelectorAll('.carousel-slide img').length;
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        carousel.dataset.currentIndex = currentIndex;
+        showSlide(carouselId, currentIndex);
+    }
+
+    function displayJacket() {
+        const carousel = document.getElementById("c1");
+        let currentIndex = parseInt(carousel.dataset.currentIndex) || 0;
+        var displayedImage = document.getElementById('displayjacket');
+        displayedImage.src = "images/j" + currentIndex + ".png";
+    }
+
+    function displayTop() {
+        const carousel = document.getElementById("c2");
+        let currentIndex = parseInt(carousel.dataset.currentIndex) || 0;
+        var displayedImage = document.getElementById('displaytop');
+        displayedImage.src = "images/t" + currentIndex + ".png";
+    }
+
+    function displayBottom() {
+        const carousel = document.getElementById("c3");
+        let currentIndex = parseInt(carousel.dataset.currentIndex) || 0;
+        var displayedImage = document.getElementById('displaybottom');
+        displayedImage.src = "images/p" + currentIndex + ".png";
+    }
+
+    function displayShoes() {
+        const carousel = document.getElementById("c4");
+        let currentIndex = parseInt(carousel.dataset.currentIndex) || 0;
+        var displayedImage = document.getElementById('displayshoes');
+        displayedImage.src = "images/s" + currentIndex + ".png";
+    }
+
+    </script>
+    <div>
+        <div class="card" id="jackets">
+            <a class="close" href="#" onclick="displayJacket()">x</a>
+            <div id="text" class="brown"></div>
+            <div class="carousel-container" id="c1">
+                <div class="carousel-slide">
+                    <img src="images/empty.png">
+                    <img src="images/j1.png">
+                    <img src="images/j2.png">
+                    <img src="images/j3.png">
+                    <img src="images/j4.png">
+                    <img src="images/j5.png">
+                </div>
+                <div class="prev" onclick="prevSlide('c1')">&#10094;</div>
+                <div class="next" onclick="nextSlide('c1')">&#10095;</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="card" id="bottoms">
+            <a class="close" href="#" onclick="displayBottom()">x</a>
+            <div class="carousel-container" id="c3">
+                <div class="carousel-slide">
+                    <img src="images/empty.png">
+                    <img src="images/p1.png">
+                    <img src="images/p2.png">
+                    <img src="images/p3.png">
+                    <img src="images/p4.png">
+                    <img src="images/p5.png">
+                    <img src="images/p6.png">
+                    <img src="images/p7.png">
+                    <img src="images/p8.png">
+                    <img src="images/p9.png">
+                    <img src="images/p10.png">
+                    <img src="images/p11.png">
+                </div>
+                <div class="prev" onclick="prevSlide('c3')">&#10094;</div>
+                <div class="next" onclick="nextSlide('c3')">&#10095;</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="card" id="tops">
+            <a class="close" href="#" onclick="displayTop()">x</a>
+            <div class="carousel-container" id="c2">
+                <div class="carousel-slide">
+                    <img src="images/empty.png">
+                    <img src="images/t1.png">
+                    <img src="images/t2.png">
+                    <img src="images/t3.png">
+                    <img src="images/t4.png">
+                    <img src="images/t5.png">
+                    <img src="images/t6.png">
+                    <img src="images/t7.png">
+                    <img src="images/t8.png">
+                    <img src="images/t9.png">
+                    <img src="images/t10.png">
+                    <img src="images/t11.png">
+                    <img src="images/t12.png">
+                    <img src="images/t13.png">
+                </div>
+                <div class="prev" onclick="prevSlide('c2')">&#10094;</div>
+                <div class="next" onclick="nextSlide('c2')">&#10095;</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="card" id="shoes">
+            <a class="close" href="#" onclick="displayShoes()">x</a>
+            <div class="carousel-container" id="c4">
+                <div class="carousel-slide">
+                    <img src="images/empty.png">
+                    <img src="images/s1.png">
+                    <img src="images/s2.png">
+                    <img src="images/s3.png">
+                    <img src="images/s4.png">
+                    <img src="images/s5.png">
+                    <img src="images/s6.png">
+                </div>
+                <div class="prev" onclick="prevSlide('c4')">&#10094;</div>
+                <div class="next" onclick="nextSlide('c4')">&#10095;</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
