@@ -1,0 +1,90 @@
+
+#body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#background {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+    left:0;
+}
+
+#phonescreen {
+    position: absolute;
+    height: 75vh;
+    top: 10vh;
+    left: 15vw;
+}
+
+#instaicon {
+    position: absolute;
+    height: 25vh;
+    top: 60vh;
+    left: 30vw;
+}
+
+#hook {
+    position: absolute;
+    left: 50vw;
+    top: 36vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#email {
+    width: 50vw;
+    position: absolute;
+    top: 130vh;
+    left: 25vw;
+}
+
+#slide {
+    position: relative;
+    top: 5vh;
+    width: 30vw;
+    left: 35vw;
+}
+
+#product {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+}
+
+#connect {
+    position: absolute;
+    top: 200vh;
+    left: 0;
+    height: 50vh;
+}
+
+.colorgradient {
+    background: linear-gradient(rgb(237, 172, 237), white);
+}
+
+h1 {
+    position: relative;
+    width: 80vw;
+    left: 10vw;
+    text-align: center;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50;
+    font-weight: bold;
+}
+
+h2 {
+    position: relative;
+    width: 50vw;
+    left: 25vw;
+    text-align: center;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:100;
+    font-size: 25;
+}
