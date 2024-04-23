@@ -1,10 +1,36 @@
-a {
-    padding: 2%;
-    background-color:bisque;
-    position:relative;
-    width: 100px;
-    text-align:center;
-    font-family:'Courier New', Courier, monospace;
-    color:rgb(56, 68, 116);
-    border-radius: 25px;
+body {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(20, 70, 20);
+    top: 0;
+    left: 0;
+}
+
+#game-board {
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    width: 60vw;
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: none;
+}
+
+#car {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+
+}
+
+.cell {
+    width: 4%;
+    height: 5%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    cursor: pointer;
 }
