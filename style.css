@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
 body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(20, 70, 20);
+    background-color: rgb(20, 50, 20);
     top: 0;
     left: 0;
+}
+
+#side {
+    position: fixed;
+    top: 5vh;
+    left: 70vw;
+    height: 90vh;
+    width: 25vw;
+    background-color: white;
 }
 
 #game-board {
@@ -20,17 +31,60 @@ body {
 }
 
 #car {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: red;
+    width: 4%;
+    height: 5%;
+    position: relative;
+    transform: rotate(-90deg);
+}
 
+#projectText {
+    top: 10%;
+    text-align: center;
+    position: relative;
+    font-size: 4vh;
+    color:rgb(20, 50, 20);
+    font-weight: 400;
+    font-family: "Jersey 10", sans-serif;
+    font-style: normal;
+}
+
+#projectTitle {
+    top: 5%;
+    text-align: center;
+    position: relative;
+    font-size: 10vh;
+    color:rgb(20, 50, 20);
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.project {
+    width: 4%;
+    height: 5%;
+    position: relative;
 }
 
 .cell {
     width: 4%;
     height: 5%;
-    box-sizing: border-box;
-    border: 1px solid black;
     cursor: pointer;
+}
+
+#go {
+    visibility: hidden;
+    position: relative;
+    width: 60%;
+    top: 35%;
+    left: 20%;
+}
+
+#gopic {
+    width: 60%;
+}
+
+#background {
+    position: fixed;
+    width: 60%;
+    height: 90%;
 }

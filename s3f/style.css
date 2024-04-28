@@ -1,0 +1,40 @@
+input {
+    position: fixed;
+    width: 40vw;
+    height: 5vh;
+    top: 40vh;
+    left: 30vw;
+    border-radius: 0;
+    font-size: 6vh;
+}
+
+button {
+    position: fixed;
+    border: none;
+    width: 20vw;
+    height: 5vh;
+    top: 50vh;
+    left: 40vw;
+    font-family:'Courier New', Courier, monospace;
+}
+
+div {
+    position: fixed;
+    width: 20vw;
+    left: 40vw;
+    top: 36vh;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: darkseagreen;
+}
+
+canvas {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
