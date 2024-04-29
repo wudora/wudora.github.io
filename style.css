@@ -39,6 +39,8 @@ body {
 
 #projectText {
     top: 10%;
+    width: 80%;
+    left: 10%;
     text-align: center;
     position: relative;
     font-size: 4vh;
@@ -50,6 +52,8 @@ body {
 
 #projectTitle {
     top: 5%;
+    width: 80%;
+    left: 10%;
     text-align: center;
     position: relative;
     font-size: 10vh;
@@ -59,7 +63,7 @@ body {
     font-style: normal;
 }
 
-.project {
+.disc {
     width: 4%;
     height: 5%;
     position: relative;
@@ -83,8 +87,66 @@ body {
     width: 60%;
 }
 
-#background {
+#arrows {
+    position: relative;
+    width: 60%;
+    top: 15%;
+    left: 20%;
+}
+
+.background {
     position: fixed;
     width: 60%;
     height: 90%;
+}
+
+.flag {
+    position: fixed;
+    width: 2%;
+    z-index: 1;
+}
+
+#flag1 {
+    top: 19vh;
+    left: 22vw;
+}
+
+#flag2 {
+    top: 14vh;
+    left: 39vw;
+}
+
+#flag3 {
+    top: 23vh;
+    left: 56vw;
+}
+
+#flag4 {
+    top: 50vh;
+    left: 48vw;
+}
+
+#flag5 {
+    top: 46vh;
+    left: 32vw;
+}
+
+#flag6 {
+    top: 51vh;
+    left: 15vw;
+}
+
+#flag7 {
+    top: 77vh;
+    left: 10vw;
+}
+
+#flag8 {
+    top: 77vh;
+    left: 27vw;
+}
+
+#flag9 {
+    top: 81vh;
+    left: 48vw;
 }

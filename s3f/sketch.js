@@ -15,7 +15,9 @@ const b2 = new Set([1, 7, 9, 15, 17, 20, 22]);
 
 
 function setup() {
+    createCanvas(width, height);
     background(255);
+    noStroke();
 }
 
 function draw() {
@@ -39,7 +41,6 @@ function generate() {
     height = window.innerHeight;
     createCanvas(width, height);
     colors.length = 0;
-    noStroke();
     const text = document.getElementById("inputValue").value;
     const letters = text.split('');
     for (let i = 0; i < letters.length; i++) {
